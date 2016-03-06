@@ -1,0 +1,26 @@
+/*
+Theme Name: Chinese Valley
+Theme URI: http://blog.yinannandesign.com/
+Author: Elie Meignan
+Author URI: http://www.eliepse.fr
+Description: Thème léger et adapté aux langues asiatiques
+Version: 1.0
+Tags: chinese, asia, french
+*/
+
+
+html, body
+{
+	
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+	background: #fff;
+	
+	font-family: Aleo, "Microsoft Yahei", Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	
+}
