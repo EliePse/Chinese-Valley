@@ -17,10 +17,118 @@ html, body
 	margin: 0;
 	padding: 0;
 	
-	background: #fff;
+	background: #fbfbfb;
 	
-	font-family: Aleo, "Microsoft Yahei", Arial, sans-serif;
+	font-family: "Microsoft Yahei", Arial, sans-serif;
+	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	
 }
+
+hr
+{
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+
+
+
+
+
+
+
+/* Colors styles */
+/* ---------------------------------- */
+
+.red_txt { color: #e55225; }
+.red_bkg { background-color: #e55225; }
+
+.red_txt hr, hr.red_txt { border-color: #e55225; }
+
+
+
+
+
+
+
+
+
+
+/* Header styles */
+/* ---------------------------------- */
+
+.h1{}
+.h2{}
+.h3{}
+.h4{}
+.h5{}
+.h6{}
+
+
+
+
+
+
+
+/* Nav styles */
+/* ---------------------------------- */
+
+nav
+{
+	
+	position: fixed;
+	top: 30px; left: 30px;
+	width: 100px;
+	
+	line-height: 28px;
+	
+}
+
+
+.customize-support nav
+{
+	top: 62px;
+}
+
+	
+	nav .menu {
+		
+		margin-top: 58px;
+		
+	}
+	
+	nav ul
+	{
+		
+		list-style-type: none;
+		padding: 0;
+		
+	}
+
+
+
+
+
+
+/* Header styles */
+/* ---------------------------------- */
+
+.content
+{
+	
+	margin-left: 160px;
+	
+}
+
+.customize-support .content
+{
+	margin-top: 32px;
+}
+
+
+
+
+
+
+
