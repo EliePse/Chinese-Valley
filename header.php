@@ -22,9 +22,16 @@
 				</ul>
 				<hr/>
 				<ul>
-					<li>Marketing</li>
-					<li>Designers</li>
-					<li>Culture&Art</li>
+					<?php
+					wp_list_categories(array(
+						
+						'orderby' => 'ID',
+						'title_li' => '',
+						'child_of' => 3,
+						'hide_empty' => 0
+						
+					));
+					?>
 				</ul>
 				<hr/>
 				<ul>
