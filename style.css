@@ -30,10 +30,24 @@ hr
 	border-style: solid;
 }
 
+.red_txt a,
+.grey_txt a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
 a:hover
 {
 	text-decoration: underline;
 }
+
+p
+{
+	text-align: justify;
+}
+
+
 
 
 
@@ -42,8 +56,10 @@ a:hover
 /* Colors styles */
 /* ---------------------------------- */
 
-.red_txt { color: #e55225; }
-.red_bkg { background-color: #e55225; }
+.black_txt 	{ color: #3f3f3f; }
+.grey_txt 	{ color: #898989; }
+.red_txt 	{ color: #e55225; }
+.red_bkg 	{ background-color: #e55225; }
 
 .red_txt hr, hr.red_txt { border-color: #e55225; }
 
@@ -65,16 +81,19 @@ a:hover
 	
 	font-size: 34px;
 	font-weight: bold;
-	line-height: 25px;
+	line-height: 37px;
 }
 
 .h2{}
-.h3{}
+.h3
+{
+	font-size: 13px;
+}
 .h4{}
 .h5{}
 .h6{}
 
-
+h3 {font-weight: inherit;}
 
 
 
@@ -110,12 +129,6 @@ nav
 		padding: 0;
 	}
 	
-	nav a
-	{
-		color: inherit;
-		text-decoration: none;
-	}
-	
 	
 	
 	
@@ -129,10 +142,8 @@ nav
 
 .content
 {
-	
 	padding-top: 150px; /* TEMPORAIRE */
 	margin-left: 160px;
-	
 }
 
 .customize-support .content
@@ -153,7 +164,6 @@ nav
 
 .post
 {
-	
 	position: relative;
 	
 	width: 625px;
@@ -163,20 +173,35 @@ nav
 	border: 5px solid rgb(229, 82, 37);
 	
 	overflow: visible;
-	
 }
 	
 	.post .infos
 	{
 		position: absolute;
-		top: 0; right: 0;
+		top: 18px; right: 25px;
 		
-		text-align: right;
+		font-weight: normal;
+	}
+	
+	.post ul
+	{
+		margin: 0;
+	}
+	
+	.post li
+	{
+		display: inline-block;
+		margin-left: 10px;
+		padding: 0;
+	}
+	
+	.post .infos .h3
+	{
+		margin: 5px 0 0 0;
 	}
 	
 	.post .preview
 	{
-		
 		position: absolute;
 		top: 82px; left: 60px;
 		
@@ -185,7 +210,6 @@ nav
 		
 		background: #fff;
 		box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.06);
-		
 	}
 	
 	.post .attachment-post-thumbnail
@@ -197,7 +221,7 @@ nav
 	{
 		display: inline-block;
 		
-		width: 250px;
+		width: 260px;
 		height: 200px;
 		
 		overflow: hidden;
@@ -205,8 +229,16 @@ nav
 	
 	.post p
 	{
-		height: 90px;
-		margin: 45px 10px 0 10px;
+		margin: 30px 20px 0 20px;
+		
+		font-size: 18px;
+		line-height: 38px;
 		
 		overflow: hidden;
+	}
+	
+	.post .h3
+	{
+		margin-right: 20px;
+		text-align: right;
 	}

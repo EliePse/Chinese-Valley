@@ -5,15 +5,15 @@
 		<div class="post">
 			
 			<h1 class="h1 red_txt"><?php the_title(); ?></h1>
-			<div class="infos">
+			<div class="infos red_txt">
 				<?php the_category(); ?>
-				<h3><?php the_date(); ?></h3>
+				<h3 class="h3"><?php echo get_the_date(); ?></h3>
 			</div>
 			<div class="preview">
-				<?php the_post_thumbnail(); ?>
-				<div class="description">
+				<?php the_post_thumbnail(); ?><!-- 
+			 --><div class="description black_txt">
 					<?php the_excerpt(); ?>
-					<h3><a href="<?php the_permalink(); ?>">Lire la suite</a></h3>
+					<h3 class="h3 grey_txt"><a href="<?php the_permalink(); ?>">写这个</a></h3>
 				</div>
 			</div>
 			
