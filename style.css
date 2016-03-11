@@ -86,11 +86,10 @@ nav
 	line-height: 28px;
 }
 
-
-.customize-support nav
-{
-	top: 62px;
-}
+	.customize-support nav
+	{
+		top: 62px;
+	}
 
 	
 	nav .menu
@@ -113,10 +112,12 @@ nav
 	margin-left: 160px;
 }
 
-.customize-support .content
-{
-	margin-top: 32px;
-}
+	.customize-support .content
+	{
+		margin-top: 32px;
+	}
+
+
 
 
 .the-posts { margin: auto; }
@@ -130,6 +131,25 @@ nav
 	overflow: hidden;
 }
 	
+	.post ul { margin: 0; }
+	
+	.post li
+	{
+		display: inline-block;
+		margin-left: 10px;
+		padding: 0;
+	}
+	
+	.post p
+	{
+		margin: 30px 20px 0 20px;
+		
+		font-size: 18px;
+		line-height: 38px;
+		
+		overflow: hidden;
+	}
+	
 	.post-frame {
 		position: absolute;
 		top: 0; left: 0;
@@ -141,12 +161,7 @@ nav
 		z-index: 0;
 	}
 	
-	.post .h1 {
-		max-width: 450px;
-		margin: 12px 0 12px 20px;
-	}
-	
-	.post .infos
+	.post-infos
 	{
 		position: absolute;
 		top: 18px; right: 80px;
@@ -154,18 +169,8 @@ nav
 		font-weight: normal;
 	}
 	
-	.post ul { margin: 0; }
 	
-	.post li
-	{
-		display: inline-block;
-		margin-left: 10px;
-		padding: 0;
-	}
-	
-	.post .infos .h3 { margin: 5px 0 0 0; }
-	
-	.post .preview
+	.post .post-preview
 	{
 		position: relative;
 		margin-left: 60px;
@@ -181,7 +186,7 @@ nav
 	
 	.post .attachment-post-thumbnail { display: inline-block; }
 	
-	.post .description
+	.post-description
 	{
 		display: inline-block;
 		width: 260px;
@@ -190,21 +195,16 @@ nav
 		overflow: hidden;
 	}
 	
-	.post p
-	{
-		margin: 30px 20px 0 20px;
-		
-		font-size: 18px;
-		line-height: 38px;
-		
-		overflow: hidden;
+	.post .post-h1 {
+		max-width: 450px;
+		margin: 12px 0 12px 20px;
 	}
 	
-	.post .h3
-	{
-		margin-right: 20px;
-		text-align: right;
-	}
+	.post .h3 { text-align: right; }
+	.post-infos-h3 { margin: 5px 0 0 0; }
+	.post-preview-h3 { margin-right: 20px; }
+	
+	
 
 
 

@@ -7,16 +7,16 @@
 		
 		<div class="post">
 			
-			<h1 class="h1 red_txt"><?php the_title(); ?></h1>
-			<div class="infos red_txt">
+			<h1 class="h1 post-h1 red_txt"><?php the_title(); ?></h1>
+			<div class="post-infos red_txt">
 				<?php the_category(); ?>
-				<h3 class="h3"><?php echo get_the_date(); ?></h3>
+				<h3 class="h3 post-infos-h3"><?php echo get_the_date(); ?></h3>
 			</div>
-			<div class="preview">
+			<div class="post-preview">
 				<?php the_post_thumbnail(); ?><!-- 
-			 --><div class="description black_txt">
+			 --><div class="post-description black_txt">
 					<?php the_excerpt(); ?>
-					<h3 class="h3 grey_txt"><a href="<?php the_permalink(); ?>">写这个</a></h3>
+					<h3 class="h3 post-preview-h3 grey_txt"><a href="<?php the_permalink(); ?>">写这个</a></h3>
 				</div>
 			</div>
 			
