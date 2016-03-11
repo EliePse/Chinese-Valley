@@ -17,6 +17,8 @@
 				</div>
 			</div>
 			
+			<div class="post-frame"></div>
+			
 		</div>
 		
 	<?php endwhile; ?>

@@ -123,19 +123,32 @@ nav
 .post
 {
 	position: relative;
-	width: 625px;
-	height: 250px;
+	width: 695px;
 	margin-bottom: 88px;
 	
-	border: 5px solid rgb(229, 82, 37);
-	
-	overflow: visible;
+	overflow: hidden;
 }
+	
+	.post-frame {
+		position: absolute;
+		top: 0; left: 0;
+		width: 625px;
+		height: 250px;
+		
+		border: 5px solid rgb(229, 82, 37);
+		
+		z-index: 0;
+	}
+	
+	.post .h1 {
+		max-width: 450px;
+		margin: 12px 0 12px 20px;
+	}
 	
 	.post .infos
 	{
 		position: absolute;
-		top: 18px; right: 25px;
+		top: 18px; right: 80px;
 		
 		font-weight: normal;
 	}
@@ -153,14 +166,16 @@ nav
 	
 	.post .preview
 	{
-		position: absolute;
-		top: 82px; left: 60px;
-		width: 100%;
+		position: relative;
+		margin-left: 60px;
+		width: 625px;
 		height: 200px;
 		
 		background: #fff;
 		
 		box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.06);
+		
+		z-index: 10;
 	}
 	
 	.post .attachment-post-thumbnail { display: inline-block; }
@@ -209,11 +224,11 @@ nav
 
 .h1
 {
-	margin: 20px 0 0 20px;
+	margin: 0;
 	
 	font-size: 34px;
 	font-weight: bold;
-	line-height: 37px;
+	line-height: 50px;
 }
 
 .h2{}
