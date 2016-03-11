@@ -41,7 +41,11 @@ hr
 	text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+	text-decoration: underline;
+	
+	cursor: pointer;
+}
 
 p { text-align: justify; }
 
@@ -167,6 +171,8 @@ nav
 		top: 18px; right: 80px;
 		
 		font-weight: normal;
+		
+		z-index: 15;
 	}
 	
 	
@@ -196,8 +202,11 @@ nav
 	}
 	
 	.post .post-h1 {
+		position: relative;
 		max-width: 450px;
 		margin: 12px 0 12px 20px;
+		
+		z-index: 15;
 	}
 	
 	.post .h3 { text-align: right; }

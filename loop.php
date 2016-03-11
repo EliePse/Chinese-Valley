@@ -7,7 +7,7 @@
 		
 		<div class="post">
 			
-			<h1 class="h1 post-h1 red_txt"><?php the_title(); ?></h1>
+			<h1 class="h1 post-h1 red_txt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			<div class="post-infos red_txt">
 				<?php the_category(); ?>
 				<h3 class="h3 post-infos-h3"><?php echo get_the_date(); ?></h3>
