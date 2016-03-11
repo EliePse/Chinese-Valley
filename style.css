@@ -119,12 +119,13 @@ nav
 }
 
 
+.the-posts { margin: auto; }
 
 .post
 {
 	position: relative;
 	width: 695px;
-	margin-bottom: 88px;
+	margin: auto auto 88px auto;
 	
 	overflow: hidden;
 }
