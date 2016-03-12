@@ -12,6 +12,14 @@
 	
 	
 	function image_tag($html, $id, $alt, $title) {
-		return '<div class="article-content-asideImg">'. $html .'</div>';
+		if(preg_match('/alignleft/', $html))
+			$align = 'asideImg-left';
+		else if(preg_match('/aligncenter/', $html))
+			$align = 'asideImg-center';
+		else if(preg_match('/alignright/', $html))
+			$align = 'asideImg-right';
+		else
+			$align = '';
+		return '<div class="article-content-asideImg '. $align .'">'. $html .'</div>';
 	}
 	add_filter('get_image_tag', 'image_tag', 0, 4);
