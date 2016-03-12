@@ -212,8 +212,63 @@ nav
 	.post .h3 { text-align: right; }
 	.post-infos-h3 { margin: 5px 0 0 0; }
 	.post-preview-h3 { margin-right: 20px; }
+
+
+
+.article
+{
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	min-height: 900px;
+	margin: auto auto 50px auto;
 	
+	background: #fff;
 	
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+	
+	.article-content img
+	{
+		margin: 25px 0;
+		border-bottom: 7px solid #e55225;
+	}
+	
+	.article-content-asideImg
+	{
+		float: left;
+		width: 250px;
+	}
+	
+	.alignLeft
+	{
+		position: relative;
+		right: 50px;
+		width: 255px;
+		height: auto;
+	}
+	
+	.article-content
+	{
+		padding-top: 50px;
+	}
+	
+	.article-content p
+	{
+		margin: 15px 60px;
+		
+		font-size: 16px;
+		letter-spacing: 0.08em;
+		line-height: 34px;
+		color: #3f3f3f;
+	}
+	
+	.article-content blockquote p
+	{
+		font-size: 18px;
+		line-height: 28px;
+		font-family: 楷体, serif;
+	}	
 
 
 
