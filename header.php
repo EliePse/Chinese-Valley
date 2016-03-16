@@ -15,27 +15,41 @@
 			<div class="menu">
 				<p>FR / 中文</p>
 				
-				<ul>
+				<!-- <ul>
 					<li>Accueil</li>
 					<li>À Propos</li>
 					<li>Contact</li>
-				</ul>
+				</ul> -->
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'head-menu',
+					'menu_class' => '',
+					'container' => ''
+				));
+				?>
 				<hr/>
-				<ul>
-					<?php
-					wp_list_categories(array(
-						
-						'orderby' => 'ID',
-						'title_li' => '',
-						'child_of' => 3,
-						'hide_empty' => 0
-						
-					));
-					?>
-				</ul>
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'category-menu',
+					'menu_class' => '',
+					'container' => ''
+				));
+				/*wp_list_categories(array(
+					
+					'orderby' => 'ID',
+					'title_li' => '',
+					'child_of' => 3,
+					'hide_empty' => 0
+					
+				));*/
+				?>
 				<hr/>
-				<ul>
-					<li>Tumblr</li>
-				</ul>
+				<?php 
+				wp_nav_menu(array(
+					'theme_location' => 'links-menu',
+					'menu_class' => '',
+					'container' => ''
+				));
+				?>
 			</div>
 		</nav>

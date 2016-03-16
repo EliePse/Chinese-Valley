@@ -23,3 +23,15 @@
 		return '<div class="article-content-asideImg '. $align .'">'. $html .'</div>';
 	}
 	add_filter('get_image_tag', 'image_tag', 0, 4);
+	
+	
+	function register_my_menus() {
+		register_nav_menus(
+			array(
+				'head-menu' => __( 'Head Menu' ),
+				'category-menu' => __( 'Category Menu' ),
+				'links-menu' => __( 'Links Menu' )
+			)
+		);
+	}
+	add_action( 'init', 'register_my_menus' );
