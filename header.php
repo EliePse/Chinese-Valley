@@ -10,16 +10,23 @@
 		
 		<nav class="red_txt">
 		
-			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logotype" />
+			<a href="<?php bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logotype" /></a>
 			
 			<div class="menu">
-				<p>FR / 中文</p>
+			
+				<?php
+				$menu_name = 'lang-menu';
+				$locations = get_nav_menu_locations();
+				$menu_id   = $locations[ $menu_name ] ;
+				// print_r( wp_get_nav_menu_items( $menu_id ) );
+				wp_nav_menu(array(
+					'theme_location' => 'lang-menu',
+					'menu_class' => 'language-menu',
+					'container' => ''
+				));
 				
-				<!-- <ul>
-					<li>Accueil</li>
-					<li>À Propos</li>
-					<li>Contact</li>
-				</ul> -->
+				?>
+				
 				<?php
 				wp_nav_menu(array(
 					'theme_location' => 'head-menu',
@@ -27,7 +34,9 @@
 					'container' => ''
 				));
 				?>
+				
 				<hr/>
+				
 				<?php
 				wp_nav_menu(array(
 					'theme_location' => 'category-menu',

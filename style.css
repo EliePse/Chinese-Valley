@@ -106,7 +106,24 @@ nav
 		padding: 0;
 		list-style-type: none;
 	}
+	
+	nav .active {
+		
+		font-weight: bold;
+		
+	}
+	
+	.language-menu li {
+		
+		display: inline-block;
+		
+	}
 
+	.language-menu li:last-child:before {
+		
+		content: ' / ';
+		
+	}
 
 
 
